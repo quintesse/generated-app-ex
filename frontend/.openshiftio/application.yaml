@@ -123,18 +123,20 @@ objects:
               ports:
                 - containerPort: 8080
                   protocol: TCP
-              resources: {}
+              resources:
+                limits:
+                  memory: 512Mi
               env:
                 - name: OUTPUT_DIR
                   value: dist
               readinessProbe:
                 httpGet:
-                  path: /health
+                  path: /
                   port: 8080
                   scheme: HTTP
               livenessProbe:
                 httpGet:
-                  path: /health
+                  path: /
                   port: 8080
                   scheme: HTTP
     status:

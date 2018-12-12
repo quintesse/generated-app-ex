@@ -282,7 +282,9 @@ objects:
                   protocol: TCP
                 - containerPort: 8778
                   protocol: TCP
-              resources: {}
+              resources:
+                limits:
+                  memory: 2G
               env:
                 - name: DB_HOST
                   valueFrom:
