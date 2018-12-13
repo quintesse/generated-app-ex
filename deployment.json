@@ -15,7 +15,6 @@
             }
           },
           "extra": {
-            "category": "backend",
             "runtimeImage": "registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift",
             "runtimeInfo": {
               "id": "vertx",
@@ -27,7 +26,8 @@
               }
             },
             "runtimeService": "fubar-backend",
-            "runtimeRoute": "fubar-backend"
+            "runtimeRoute": "fubar-backend",
+            "category": "backend"
           },
           "capabilities": [
             {
@@ -36,6 +36,7 @@
                 "databaseType": "postgresql"
               },
               "extra": {
+                "category": "backend",
                 "databaseImage": "postgresql",
                 "databaseService": "fubar-backend-database",
                 "sourceMapping": {
@@ -47,6 +48,7 @@
               "module": "rest",
               "props": {},
               "extra": {
+                "category": "backend",
                 "sourceMapping": {
                   "greetingEndpoint": "backend/src/main/java/io/openshift/booster/http/HttpApplication.java"
                 }
@@ -62,7 +64,6 @@
             }
           },
           "extra": {
-            "category": "frontend",
             "frameworkImage": "nodeshift/centos7-s2i-web-app",
             "frameworkInfo": {
               "id": "angular",
@@ -74,13 +75,16 @@
               }
             },
             "frameworkService": "fubar-frontend",
-            "frameworkRoute": "fubar-frontend"
+            "frameworkRoute": "fubar-frontend",
+            "category": "frontend"
           },
           "capabilities": [
             {
               "module": "web-app",
               "props": {},
-              "extra": {}
+              "extra": {
+                "category": "frontend"
+              }
             }
           ],
           "subFolderName": "frontend"
@@ -94,7 +98,9 @@
             {
               "module": "welcome",
               "props": {},
-              "extra": {}
+              "extra": {
+                "category": "support"
+              }
             }
           ],
           "subFolderName": "support"
