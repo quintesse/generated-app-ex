@@ -2,7 +2,7 @@
   "applications": [
     {
       "application": "fubar",
-      "tiers": [
+      "parts": [
         {
           "shared": {
             "runtime": {
@@ -53,7 +53,7 @@
               }
             }
           ],
-          "tier": "backend"
+          "subFolderName": "backend"
         },
         {
           "shared": {
@@ -83,7 +83,7 @@
               "extra": {}
             }
           ],
-          "tier": "frontend"
+          "subFolderName": "frontend"
         },
         {
           "shared": {},
@@ -97,7 +97,7 @@
               "extra": {}
             }
           ],
-          "tier": "support"
+          "subFolderName": "support"
         }
       ]
     }
