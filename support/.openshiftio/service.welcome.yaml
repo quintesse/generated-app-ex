@@ -33,7 +33,7 @@ parameters:
       4.2 3.1 8.9 3.1 13.8v1H499l95.2-132h-16.8zm-19.7 81.5l-20.1 27.9 16.5
       22.6h40.2c-9.6-13.7-24-33.3-36.6-50.5z'/%3E%3C/svg%3E","description":"A
       tool-kit for building reactive applications on the
-      JVM.","metadata":{"language":"java"}},"service":"fubar-backend","route":"fubar-backend"},"category":"backend"},"capabilities":[{"module":"database","props":{"databaseType":"postgresql"},"extra":{"category":"backend","databaseInfo":{"image":"postgresql","service":"fubar-backend-database-bind"},"sourceMapping":{"dbEndpoint":"backend/src/main/java/io/openshift/booster/database/CrudApplication.java"}}},{"module":"rest","props":{},"extra":{"category":"backend","sourceMapping":{"greetingEndpoint":"backend/src/main/java/io/openshift/booster/http/HttpApplication.java"}}}],"subFolderName":"backend"},{"shared":{"framework":{"name":"angular"}},"extra":{"frameworkInfo":{"image":"nodeshift/centos7-s2i-web-app","enumInfo":{"id":"angular","name":"Angular","description":"A
+      JVM.","metadata":{"categories":["backend"],"language":"java"}},"service":"fubar-backend","route":"fubar-backend"},"category":"backend"},"capabilities":[{"module":"database","props":{"databaseType":"postgresql"},"extra":{"category":"backend","databaseInfo":{"image":"postgresql","service":"fubar-backend-database-bind"},"sourceMapping":{"dbEndpoint":"backend/src/main/java/io/openshift/booster/database/CrudApplication.java"}}},{"module":"rest","props":{},"extra":{"category":"backend","sourceMapping":{"greetingEndpoint":"backend/src/main/java/io/openshift/booster/http/HttpApplication.java"}}}],"subFolderName":"backend"},{"shared":{"runtime":{"name":"angular"}},"extra":{"runtimeInfo":{"image":"nodeshift/centos7-s2i-web-app","enumInfo":{"id":"angular","name":"Angular","description":"A
       declarative JavaScript framework for building user
       interfaces.","icon":"data:image/svg+xml,%3c%3fxml version='1.0'
       encoding='utf-8'%3f%3e %3c!-- Generator: Adobe Illustrator 19.1.0%2c SVG
@@ -51,7 +51,7 @@ parameters:
       class='st2'
       d='M125%2c52.1L66.8%2c182.6h0h21.7h0l11.7-29.2h49.4l11.7%2c29.2h0h21.7h0L125%2c52.1L125%2c52.1L125%2c52.1L125%2c52.1
       L125%2c52.1z M142%2c135.4H108l17-40.9L142%2c135.4z'/%3e %3c/g%3e
-      %3c/svg%3e","metadata":{"language":"javascript"}},"service":"fubar-frontend","route":"fubar-frontend"},"category":"frontend"},"capabilities":[{"module":"web-app","props":{},"extra":{"category":"frontend"}}],"subFolderName":"frontend"},{"shared":{},"extra":{"category":"support"},"capabilities":[{"module":"welcome","props":{},"extra":{"category":"support"}}],"subFolderName":"support"}]}
+      %3c/svg%3e","metadata":{"categories":["frontend"],"language":"javascript"}},"service":"fubar-frontend","route":"fubar-frontend"},"category":"frontend"},"capabilities":[{"module":"web-app","props":{},"extra":{"category":"frontend"}}],"subFolderName":"frontend"},{"shared":{},"extra":{"category":"support"},"capabilities":[{"module":"welcome","props":{},"extra":{"category":"support"}}],"subFolderName":"support"}]}
   - name: FRONTEND_SERVICE_NAME
     description: The frontend service name for the welcome app
     displayName: Frontend service name
