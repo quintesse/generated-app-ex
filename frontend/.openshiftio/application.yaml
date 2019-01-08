@@ -75,7 +75,7 @@ objects:
           incremental: true
           env:
             - name: OUTPUT_DIR
-              value: dist
+              value: dist/fubar
       output:
         to:
           kind: ImageStreamTag
@@ -128,7 +128,7 @@ objects:
                   memory: 512Mi
               env:
                 - name: OUTPUT_DIR
-                  value: dist
+                  value: dist/fubar
               readinessProbe:
                 httpGet:
                   path: /
