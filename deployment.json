@@ -26,7 +26,8 @@
                   "categories": [
                     "backend"
                   ],
-                  "language": "java"
+                  "language": "java",
+                  "website": "https://projects.eclipse.org/projects/rt.vertx"
                 }
               },
               "service": "fubar-backend",
@@ -82,7 +83,8 @@
                   "categories": [
                     "frontend"
                   ],
-                  "language": "javascript"
+                  "language": "javascript",
+                  "website": "https://angular.io"
                 }
               },
               "service": "fubar-frontend",

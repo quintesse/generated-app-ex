@@ -10,7 +10,9 @@ OPENSHIFTIO_DIR=${SCRIPT_DIR}/.openshiftio
 SOURCE_DIR=${SCRIPT_DIR}
 if [[ ! -z "backend" ]]; then
     SOURCE_DIR=${SOURCE_DIR}/..
-    SUB_DIR=/backend
+    SUB_DIR=/backend/deployments
+else
+    SUB_DIR=/deployments
 fi
 
 function do_deploy() {
